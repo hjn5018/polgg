@@ -11,8 +11,8 @@
 - [x] API 개발 명세서 작성
 - [x] Backend: Spring Boot 프로젝트 초기화 및 Gradle 설정
 - [x] Frontend: Vite + React 프로젝트 초기화
-- [ ] DB: MySQL 및 Redis 환경 구축
-- [ ] CI/CD: GitHub Actions 배포 파이프라인 구축
+- [x] DB: MySQL 및 Redis 환경 구축
+- [x] CI/CD: GitHub Actions 배포 파이프라인 구축
 
 ---
 

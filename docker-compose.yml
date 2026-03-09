@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: polgg-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: polgg
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - polgg-db-data:/var/lib/mysql
+
+  redis:
+    image: redis:latest
+    container_name: polgg-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - polgg-redis-data:/data
+
+volumes:
+  polgg-db-data:
+  polgg-redis-data:
