@@ -17,7 +17,7 @@
 ---
 
 ## 2. 핵심 기능 개발 1: 인증 및 인프라 (Week 5-8)
-- [ ] 사용자 엔티티 및 Repository 구현
+- [x] 사용자 엔티티 및 Repository 구현 (Member, MemberRepository)
 - [ ] @office.kopo.ac.kr 이메일 인증 발송 로직 구현 (SMTP)
 - [ ] 학번/이메일 기반 회원가입 기능 (10자리 학번 검증)
 - [ ] JWT 기반 로그인 시스템 및 Spring Security 설정
