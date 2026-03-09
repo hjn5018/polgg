@@ -97,8 +97,9 @@ erDiagram
 ## 🎨 UI 목업 (UI Mockups)
 
 ### 1. 메인 대시보드 (Main Dashboard)
-- 최신 포트폴리오 및 인재 리스트를 한눈에 확인 가능.
-- 세련된 다크 모드와 글래스모피즘 디자인 적용.
+- Hacker News 스타일의 미니멀한 텍스트 리스트 구성.
+- 사진을 배제하고 제목, 작성자, 등록 시간, 합불 상태(Tag) 등 핵심 정보만 간결하게 노출.
+- 세련된 다크 모드와 고대비 타이포그래피로 전문성 강조.
 ![Main Dashboard Mockup](docs/images/main_dashboard.png)
 
 ### 2. 마이페이지 / 포트폴리오 에디터 (My Page & Editor)
