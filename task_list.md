@@ -9,8 +9,8 @@
 - [x] DB 모델링 및 ERD 작성
 - [x] UI/UX 와이어프레임 및 목업 설계
 - [x] API 개발 명세서 작성
-- [ ] Backend: Spring Boot 프로젝트 초기화 및 Gradle 설정
-- [ ] Frontend: Vite + React 프로젝트 초기화
+- [x] Backend: Spring Boot 프로젝트 초기화 및 Gradle 설정
+- [x] Frontend: Vite + React 프로젝트 초기화
 - [ ] DB: MySQL 및 Redis 환경 구축
 - [ ] CI/CD: GitHub Actions 배포 파이프라인 구축
 
