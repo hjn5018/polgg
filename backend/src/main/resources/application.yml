@@ -54,6 +54,10 @@ logging:
     com.polgg: DEBUG
 
 langchain4j:
-  open-ai:
+  ollama:
     chat-model:
-      api-key: ${OPENAI_API_KEY}
+      base-url: http://localhost:11434
+      model-name: llama3
+    embedding-model:
+      base-url: http://localhost:11434
+      model-name: nomic-embed-text

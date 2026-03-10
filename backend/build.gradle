@@ -38,7 +38,7 @@ dependencies {
 	
 	// AI: LangChain4j
 	implementation 'dev.langchain4j:langchain4j:0.36.2'
-	implementation 'dev.langchain4j:langchain4j-open-ai-spring-boot-starter:0.36.2'
+	implementation 'dev.langchain4j:langchain4j-ollama:0.36.2'
 	implementation 'dev.langchain4j:langchain4j-core:0.36.2'
 	// Vector Store (using Redis for now)
 	implementation 'dev.langchain4j:langchain4j-redis:0.36.2'
