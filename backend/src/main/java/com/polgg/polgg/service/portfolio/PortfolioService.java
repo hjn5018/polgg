@@ -1,4 +1,4 @@
-package com.polgg.polgg.service/portfolio;
+package com.polgg.polgg.service.portfolio;
 
 import com.polgg.polgg.domain.portfolio.CertificateOwned;
 import com.polgg.polgg.domain.portfolio.Portfolio;
