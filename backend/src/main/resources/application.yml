@@ -35,6 +35,20 @@ spring:
       max-file-size: 50MB
       max-request-size: 50MB
 
+jwt:
+  secret: v9y$B&E)H@McQfTjWnZr4u7x!A%C*F-JaNdRgUkXp2s5v8y/B?E(G+KbPeShVmYp
+  expiration: 86400000 # 24 hours
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    region:
+      static: ${AWS_REGION}
+    s3:
+      bucket: ${AWS_S3_BUCKET}
+
 logging:
   level:
     com.polgg: DEBUG

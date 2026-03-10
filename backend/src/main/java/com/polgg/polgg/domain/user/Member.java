@@ -33,4 +33,9 @@ public class Member extends BaseEntity {
 
     @Builder.Default
     private boolean isPortfolioPublic = false;
+
+    public void updateProfile(String name, boolean isPortfolioPublic) {
+        this.name = name;
+        this.isPortfolioPublic = isPortfolioPublic;
+    }
 }
