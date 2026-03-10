@@ -23,6 +23,16 @@ services:
     volumes:
       - polgg-redis-data:/data
 
+  ollama:
+    image: ollama/ollama:latest
+    container_name: polgg-ollama
+    restart: always
+    ports:
+      - "11434:11434"
+    volumes:
+      - polgg-ollama-data:/root/.ollama
+
 volumes:
   polgg-db-data:
   polgg-redis-data:
+  polgg-ollama-data:
