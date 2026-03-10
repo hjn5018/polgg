@@ -9,5 +9,8 @@ import java.util.Optional;
 
 public interface PortfolioRepository extends JpaRepository<Portfolio, Long> {
     List<Portfolio> findAllByMemberOrderByCreatedAtDesc(Member member);
+
     Optional<Portfolio> findByMemberAndIsMainTrue(Member member);
+    List<Portfolio> findAllByIsPublicTrueOrderByCreatedAtDesc();
+    List<Portfolio> findAllByIsPublicTrueAndTitleContainingIgnoreCaseOrderByCreatedAtDesc(String keyword);
 }

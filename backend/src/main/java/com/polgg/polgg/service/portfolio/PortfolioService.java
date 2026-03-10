@@ -22,6 +22,13 @@ public class PortfolioService {
     private final PortfolioRepository portfolioRepository;
     private final MemberRepository memberRepository;
 
+    @Transactional(readOnly = true)
+    public List<PortfolioResponseDto> searchPublicPortfolios(String keyword) {
+        return portfolioRepository.findAllByIsPublicTrueAndTitleContainingIgnoreCaseOrderByCreatedAtDesc(keyword).stream()
+                .map(PortfolioResponseDto::from)
+                .collect(Collectors.toList());
+    }
+
     @Transactional
     public Long createPortfolio(String studentId, PortfolioRequestDto dto) {
         Member member = memberRepository.findByStudentId(studentId)
@@ -85,6 +92,11 @@ public class PortfolioService {
     public PortfolioResponseDto getPortfolio(Long id) {
         Portfolio portfolio = portfolioRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("포트폴리오를 찾을 수 없습니다."));
+
+        if (!portfolio.isPublic()) {
+            // 권한 체크 로직 (필요 시 구현)
+        }
+
         return PortfolioResponseDto.from(portfolio);
     }
 

@@ -17,6 +17,11 @@ import java.util.Map;
 public class PortfolioController {
 
     private final PortfolioService portfolioService;
+    
+    @GetMapping("/search")
+    public ResponseEntity<List<PortfolioResponseDto>> searchPortfolios(@RequestParam String keyword) {
+        return ResponseEntity.ok(portfolioService.searchPublicPortfolios(keyword));
+    }
 
     @PostMapping
     public ResponseEntity<?> createPortfolio(Authentication authentication, @RequestBody PortfolioRequestDto dto) {
@@ -37,7 +42,8 @@ public class PortfolioController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> updatePortfolio(Authentication authentication, @PathVariable Long id, @RequestBody PortfolioRequestDto dto) {
+    public ResponseEntity<?> updatePortfolio(Authentication authentication, @PathVariable Long id,
+            @RequestBody PortfolioRequestDto dto) {
         String studentId = (String) authentication.getPrincipal();
         portfolioService.updatePortfolio(id, studentId, dto);
         return ResponseEntity.ok(Map.of("message", "포트폴리오가 수정되었습니다."));
