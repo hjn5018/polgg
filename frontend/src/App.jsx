@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
+import AIChat from './components/ai/AIChat';
 import './App.css';
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
             <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
+
+        <AIChat />
       </div>
     </Router>
   );
