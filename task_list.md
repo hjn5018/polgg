@@ -27,8 +27,8 @@
 ---
 
 ## 3. 핵심 기능 개발 2: 포트폴리오 및 지원 관리 (Week 9-11)
-- [ ] **Portfolio CRUD**: 메인/기타 포트폴리오 생성 및 관리
-- [ ] **Project Management**: 프로젝트명, 기간, 시연 영상, 역할 등 등록 기능
+- [x] **Portfolio CRUD**: 메인/기타 포트폴리오 생성 및 관리
+- [x] **Project Management**: 프로젝트명, 기간, 시연 영상, 역할 등 등록 기능
 - [ ] **Job Application Tracker**: 지원 기업 정보, 경로, 결과(합불) 기록 기능 (마이페이지 최상단 배치)
 - [ ] **Dashboard**: 메인 페이지 Hacker News 스타일 텍스트 리스트 구현
 - [ ] **Search & Filter**: 포트폴리오 및 이력서 공개 여부에 따른 탐색 기능
