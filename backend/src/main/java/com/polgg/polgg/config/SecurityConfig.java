@@ -37,6 +37,7 @@ public class SecurityConfig {
                         .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/portfolios/search").permitAll()
                         .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/portfolios/*").permitAll()
                         .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/posts/**").permitAll()
+                        .requestMatchers("/api/ai/chat").authenticated()
                         .requestMatchers("/h2-console/**").permitAll() // H2 콘솔 허용 (개발용)
                         .anyRequest().authenticated())
                 .addFilterBefore(new JwtAuthenticationFilter(jwtUtil), UsernamePasswordAuthenticationFilter.class);
