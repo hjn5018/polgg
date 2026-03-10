@@ -36,10 +36,10 @@
 ---
 
 ## 4. 커뮤니티 및 부가 기능 (Week 11-12)
-- [ ] **Certification Board**: 자격증 정보 공유 게시판 (카테고리: 합격수기, 정보 등)
-- [ ] **Admin Notice**: 관리자 전용 자격증 권장/공지 작성 기능
-- [ ] **Comment System**: 게시글 댓글 및 대댓글 기능
-- [ ] **Role-based Access**: 학생 및 관리자 권한 분리 적용
+- [x] **Certification Board**: 자격증 정보 공유 게시판 (카테고리: 합격수기, 정보 등)
+- [x] **Admin Notice**: 관리자 전용 자격증 권장/공지 작성 기능
+- [x] **Comment System**: 게시글 댓글 및 대댓글 기능
+- [x] **Role-based Access**: 학생 및 관리자 권한 분리 적용
 
 ---
 
